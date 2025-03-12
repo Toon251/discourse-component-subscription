@@ -1,4 +1,14 @@
 // Theme's SCSS
+.before-header-panel-outlet {
+    display: flex;
+    margin-left: auto;
+      + .panel {
+        margin-left: 0;
+      }
+}
+  
+
+
 
 .subscription-bar {
     
