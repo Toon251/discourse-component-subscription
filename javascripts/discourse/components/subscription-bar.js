@@ -48,6 +48,7 @@ export default class SubscriptionBar extends Component {
               }) }
           );
           const data3 = await response3.json();
+          console.log(data3);
           token = data3.token 
           alert(token);
           console.log('Third fetch result:', data3);
