@@ -5,7 +5,7 @@ export default class SubscriptionBar extends Component {
 
     @action
     handleClick() {
-        alert("subscription");
+        //alert("subscription");
 
         this.fetchUserSubscription();
 
@@ -51,7 +51,7 @@ export default class SubscriptionBar extends Component {
           //console.log(data3);
           let token = data3.token;
           //alert(token);
-          window.open(settings.url_subscription + "?token=" + token)
+          window.open(settings.url_subscription + "?token=" + token,"_blank")
           //console.log('Third fetch result:', data3);
         } catch (error) {
           console.error('Error during fetch:', error);
