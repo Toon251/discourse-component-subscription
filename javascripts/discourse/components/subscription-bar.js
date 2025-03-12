@@ -22,7 +22,7 @@ export default class SubscriptionBar extends Component {
         
           
           
-          alert('Username:' +  username)
+          //alert('Username:' +  username)
 
       
           // Fetch email
@@ -30,9 +30,9 @@ export default class SubscriptionBar extends Component {
           const data2 = await response2.json();
           //console.log('Second fetch result:', data2);
           email = data2.email;
-          alert('Email:' +  email)
+          //alert('Email:' +  email)
 
-          alert(settings.url_generate_token);
+          //alert(settings.url_generate_token);
       
           // Third fetch
           const response3 = await fetch(settings.url_generate_token, 
@@ -48,10 +48,11 @@ export default class SubscriptionBar extends Component {
               }) }
           );
           const data3 = await response3.json();
-          console.log(data3);
+          //console.log(data3);
           let token = data3.token;
-          alert(token);
-          console.log('Third fetch result:', data3);
+          //alert(token);
+          window.open(settings.url_subscription + "?token=" + token)
+          //console.log('Third fetch result:', data3);
         } catch (error) {
           console.error('Error during fetch:', error);
         }
