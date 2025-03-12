@@ -1,9 +1,13 @@
 // Theme's SCSS
 
 .subscription-bar {
+    
     &__wrapper {
-        //background-color: var(--quaternary);
-        color: var(--secondary);
+        position: absolute; /* Adjust if necessary */
+        top: 50%;           /* Adjust for vertical alignment */
+        left: calc(100% + 10px); /* Adjust to place it next to the chat icon */
+        z-index: 9999;      /* Make sure it appears above other elements */
+        /* Add any additional styling you need */
     }
 
     &__container {
@@ -38,14 +42,7 @@
 
 }
 
-// Outlets
-.announcement-bar__wrapper {
-    &.above-main-container {
-        margin-bottom: 1.5rem;
-        background-color: #007bff;
-        color: #f9f9f9;
-    }
-}
+
 
 .user-info-component {
     margin: 10px;
