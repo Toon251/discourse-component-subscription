@@ -1,7 +1,7 @@
 import Component from "@glimmer/component";
 import { service } from "@ember/service";
 
-export default class BrandHeaderContents extends Component {
+export default class SubscriptionBar extends Component {
     @service site;
 
     @action
