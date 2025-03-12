@@ -5,16 +5,13 @@ export default class SubscriptionBar extends Component {
 
     @action
     handleClick() {
-        //alert("subscription");
-
-        
-
         this.fetchUserSubscription();
 
     }
 
     async fetchUserSubscription() {
         try {
+
           const buttonText = document.getElementById("subscription-bar__button_text");
           buttonText.innerHTML = "Checking...";
 
