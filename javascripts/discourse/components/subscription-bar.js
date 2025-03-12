@@ -17,6 +17,7 @@ export default class SubscriptionBar extends Component {
           const response1 = await fetch('/session/current.json');
           const data1 = await response1.json();
           const user = data1.current_user
+          console.log(data1)
           
           alert('Username:', user.username)
 
