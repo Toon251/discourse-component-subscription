@@ -7,7 +7,7 @@ export default class SubscriptionBar extends Component {
     handleClick() {
         alert("subscription");
 
-        fetchUserSubscription();
+        this.fetchUserSubscription();
 
     }
 
