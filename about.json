@@ -1,8 +1,8 @@
 {
-  "name": "TODO",
+  "name": "Subscription",
   "component": true,
-  "authors": "Discourse",
-  "about_url": "TODO: Put your theme's public repo or Meta topic URL here",
+  "authors": "Paitoon Burapavijitnon",
+  "about_url": "TODO: Show subscription for paid and join group",
   "license_url": "TODO: Put your theme's LICENSE URL here",
   "learn_more": "TODO",
   "theme_version": "0.0.1",
