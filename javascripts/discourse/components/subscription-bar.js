@@ -7,12 +7,17 @@ export default class SubscriptionBar extends Component {
     handleClick() {
         //alert("subscription");
 
+        
+
         this.fetchUserSubscription();
 
     }
 
     async fetchUserSubscription() {
         try {
+          const buttonText = document.getElementById("subscription-bar__button_text");
+          buttonText.innerHTML = "Checking...";
+
           let username = '';
           let email = '';
           // Fetch current user name
@@ -50,6 +55,7 @@ export default class SubscriptionBar extends Component {
           const data3 = await response3.json();
           //console.log(data3);
           let token = data3.token;
+          buttonText.innerHTML = "Subscription";
           //alert(token);
           window.open(settings.url_subscription + "?token=" + token,"_blank")
           //console.log('Third fetch result:', data3);
