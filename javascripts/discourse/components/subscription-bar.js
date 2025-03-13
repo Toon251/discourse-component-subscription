@@ -1,7 +1,20 @@
 import Component from "@glimmer/component";
 import { action } from '@ember/object';
+import { inject as service } from '@ember/service';
 
 export default class SubscriptionBar extends Component {
+    mobile: service(),
+
+    didInsertElement() {
+      this._super(...arguments);
+      if (this.mobile.isMobile) {
+        console.log('User is on a mobile device');
+        // Additional mobile-specific logic here
+      } else {
+        console.log('User is on a desktop device');
+        // Additional desktop-specific logic here
+      }
+    }
 
     @action
     handleClick() {
