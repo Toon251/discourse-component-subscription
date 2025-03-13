@@ -14,6 +14,10 @@
     
     &__wrapper {
         color: var(--secondary);
+        width: 100%;
+        margin: 5px 5px 5px 5px;
+        border: 1px  solid #5d5b5b;
+        border-radius: 5px;
     }
 
     &__container {
