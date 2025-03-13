@@ -2,16 +2,13 @@
     <div class='subscription-bar__container'>
         <div class='subscription-bar__button'>
             <a id="subscription-bar__button_text" {{on 'click' this.handleClick}}>
-                <i class="fa fa-save"></i> 
+               Subsription
                 {{#if this.isMobile}}
-                    - Mobile
+                    (m)
                 {{else}}
-                    - Desktop
+                    (d)
                 {{/if}}
             </a>
-            <button class="btn">
-                <i class="fa fa-save"></i>
-            </button>
             
         </div>
 
