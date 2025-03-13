@@ -41,7 +41,7 @@
     &__title {
         display: flex;
         align-items: center;
-        font-size: var(--font-up-1);
+        font-size: var(--font-down-1);
         text-align: center;
         color: white;
     }
@@ -57,7 +57,7 @@
     }
 
     &__button a:hover {
-        background-color: #36353a;
+        background-color: #5c0bf2;
         color: white;
     }
 
