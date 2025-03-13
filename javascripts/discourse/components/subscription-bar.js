@@ -1,9 +1,15 @@
 import Component from "@glimmer/component";
-import { action } from '@ember/object';
-import { inject as service } from '@ember/service';
+import { computed, action } from '@ember/object';
+import Service from '@ember/service';
 
 export default class SubscriptionBar extends Component {
-    mobile: service(),
+    //@tracked isMobile = false;
+
+    @computed
+    get isMobile() {
+      return /Mobi|Android/i.test(navigator.userAgent);
+    }
+  
 
     didInsertElement() {
       this._super(...arguments);
