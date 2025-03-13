@@ -8,7 +8,6 @@
 }
 
 .subscription-bar {
-    
     &__wrapper {
         color: var(--secondary);
         margin-top: 20px; /* Space above the box */
@@ -17,7 +16,7 @@
         border-radius: 5px; /* Slightly rounded corners */
         margin-left: 20px;
         margin-right: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
 
     &__container {
