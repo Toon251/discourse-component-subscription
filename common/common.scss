@@ -56,6 +56,10 @@
         cursor: pointer;
     }
 
+    &__button:hover {
+        background-color: #8e7caf;
+    }
+
     &__subtitle div {
         font-size: var(--font-up-3);
     }
