@@ -61,11 +61,16 @@ export default class SubscriptionBar extends Component {
           let token = data3.token;
           buttonText.innerHTML = "Subscribe";
           //alert(token);
-          if(this.isMobile){
-            window.location.href = settings.url_subscription + "?token=" + token;
-          }else{
-            window.open(settings.url_subscription + "?token=" + token,"_blank");
+          try{
+            if(this.isMobile){
+              window.location.href = settings.url_subscription + "?token=" + token;
+            }else{
+              window.open(settings.url_subscription + "?token=" + token,"_blank");
+            }
+          }catch (e) {
+            alert(error);
           }
+          
           
           //console.log('Third fetch result:', data3);
         } catch (error) {
