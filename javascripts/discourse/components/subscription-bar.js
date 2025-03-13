@@ -10,18 +10,6 @@ export default class SubscriptionBar extends Component {
       return /Mobi|Android/i.test(navigator.userAgent);
     }
   
-
-    didInsertElement() {
-      this._super(...arguments);
-      if (this.mobile.isMobile) {
-        console.log('User is on a mobile device');
-        // Additional mobile-specific logic here
-      } else {
-        console.log('User is on a desktop device');
-        // Additional desktop-specific logic here
-      }
-    }
-
     @action
     handleClick() {
         this.fetchUserSubscription();
