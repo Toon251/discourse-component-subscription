@@ -1,15 +1,15 @@
 <div class='subscription-bar__wrapper {{settings.plugin_outlet}}'>
     <div class='subscription-bar__container'>
         <div class='subscription-bar__title'>
-            {{settings.subscribe_title}}
+            ไม่พลาดทุกข้อมูลที่ช่วยคุณตัดสินใจในการลงทุน
         </div>
         <div class='subscription-bar__button'>
             <a id="subscription-bar__button_text" {{on 'click' this.handleClick}}>
-               [{{settings.subscribe_button_text}}]
+                Subscribe
                 {{#if this.isMobile}}
-                    m
+                    (m)
                 {{else}}
-                    d
+                    (d)
                 {{/if}}
             </a>
             
