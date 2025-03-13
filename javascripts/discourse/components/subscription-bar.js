@@ -59,9 +59,14 @@ export default class SubscriptionBar extends Component {
           const data3 = await response3.json();
           //console.log(data3);
           let token = data3.token;
-          buttonText.innerHTML = "Subscription";
+          buttonText.innerHTML = "Subscribe";
           //alert(token);
-          window.open(settings.url_subscription + "?token=" + token,"_blank")
+          if(this.isMobile){
+            window.location.href = settings.url_subscription + "?token=" + token;
+          }else{
+            window.open(settings.url_subscription + "?token=" + token,"_blank");
+          }
+          
           //console.log('Third fetch result:', data3);
         } catch (error) {
           console.error('Error during fetch:', error);
