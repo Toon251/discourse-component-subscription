@@ -3,7 +3,13 @@
         <div class='subscription-bar__button'>
             <a id="subscription-bar__button_text" {{on 'click' this.handleClick}}>
                 Subscription
+                {{#if this.isMobile}}
+                    - Mobile
+                {{else}}
+                    - Desktop
+                {{/if}}
             </a>
         </div>
+
     </div>
 </div>
