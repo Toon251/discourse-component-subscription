@@ -14,7 +14,10 @@
     
     &__wrapper {
         color: var(--secondary);
-    
+        margin-top: 10px; /* Space above the box */
+        padding: 20px;    /* Space inside the box (around the content) */
+        background-color: lightblue; /* To visualize padding */
+        border: 1px solid black; /* To visualize the box size */
     }
 
     &__container {
