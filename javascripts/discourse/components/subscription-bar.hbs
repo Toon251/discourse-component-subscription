@@ -5,11 +5,11 @@
         </div>
         <div class='subscription-bar__button'>
             <a id="subscription-bar__button_text" {{on 'click' this.handleClick}}>
-               {{settings.subscribe_button_text}}
+               [{{settings.subscribe_button_text}}]
                 {{#if this.isMobile}}
-                    (m)
+                    m
                 {{else}}
-                    (d)
+                    d
                 {{/if}}
             </a>
             
