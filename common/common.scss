@@ -24,6 +24,9 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        gap: 5px;
     }
 
     &__content {
@@ -36,7 +39,8 @@
     }
 
     &____title {
-        font-size: var(--font-up-2);
+        font-size: var(--font-up-1);
+        text-align: center;
         color: white;
     }
 
