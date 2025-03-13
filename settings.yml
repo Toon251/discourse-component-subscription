@@ -33,12 +33,12 @@ apiKey: 'c159790ac5f92bcff28630e7160b979a455d56989e85cf160613492895a05bfb'
 apiUsername: 'system'
 url_generate_token: 'https://demo-connect-web.efinancethai.com/api/generate-jwt'
 url_subscription: 'http://localhost:4200/pricing'
-subscript_title:
+subscribe_title:
   type: string
   default: "ไม่พลาดทุกข้อมูลที่ช่วยคุณตัดสินใจในการลงทุน"
   description:
     en: "รายละเอียด Subscribe"
-subscript_button_text:
+subscribe_button_text:
   type: string
   default: "Subscribe"
   description:
